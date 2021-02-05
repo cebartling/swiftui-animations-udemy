@@ -13,6 +13,10 @@ struct ContentView: View {
     @State private var rotateInOut = false
     @State private var moveInOut = false
     
+    private let yellowGradient = Gradient(colors: [.yellow, .white])
+    private let blueGradient = Gradient(colors: [.blue, .white])
+    private let redGradient = Gradient(colors: [.red, .white])
+
     var body: some View {
         ZStack {
             Rectangle()
@@ -21,14 +25,14 @@ struct ContentView: View {
                 //MARK: - Circles set 1
                 ZStack {
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.yellow, .white]),
+                        .fill(LinearGradient(gradient: yellowGradient,
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
                         .offset(y: moveInOut ? -60 : 0)
 
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.yellow, .white]),
+                        .fill(LinearGradient(gradient: yellowGradient,
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
@@ -39,14 +43,14 @@ struct ContentView: View {
                 //MARK: - Circles set 2
                 ZStack {
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.blue, .white]),
+                        .fill(LinearGradient(gradient: blueGradient,
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
                         .offset(y: moveInOut ? -60 : 0)
 
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.blue, .white]),
+                        .fill(LinearGradient(gradient: blueGradient,
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
@@ -58,14 +62,14 @@ struct ContentView: View {
                 //MARK: - Circles set 3
                 ZStack {
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.red, .white]),
+                        .fill(LinearGradient(gradient: redGradient,
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
                         .offset(y: moveInOut ? -60 : 0)
 
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.red, .white]),
+                        .fill(LinearGradient(gradient: redGradient,
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
