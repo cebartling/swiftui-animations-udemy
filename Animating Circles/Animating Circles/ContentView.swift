@@ -20,14 +20,14 @@ struct ContentView: View {
                 //MARK: - Circles set 1
                 ZStack {
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.green, .white]),
+                        .fill(LinearGradient(gradient: Gradient(colors: [.yellow, .white]),
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
                         .offset(y: moveInOut ? -60 : 0)
 
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.green, .white]),
+                        .fill(LinearGradient(gradient: Gradient(colors: [.yellow, .white]),
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
@@ -38,14 +38,14 @@ struct ContentView: View {
                 //MARK: - Circles set 2
                 ZStack {
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.green, .white]),
+                        .fill(LinearGradient(gradient: Gradient(colors: [.blue, .white]),
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
                         .offset(y: moveInOut ? -60 : 0)
 
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.green, .white]),
+                        .fill(LinearGradient(gradient: Gradient(colors: [.blue, .white]),
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
@@ -57,14 +57,14 @@ struct ContentView: View {
                 //MARK: - Circles set 3
                 ZStack {
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.green, .white]),
+                        .fill(LinearGradient(gradient: Gradient(colors: [.red, .white]),
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
                         .offset(y: moveInOut ? -60 : 0)
 
                     Circle()
-                        .fill(LinearGradient(gradient: Gradient(colors: [.green, .white]),
+                        .fill(LinearGradient(gradient: Gradient(colors: [.red, .white]),
                                              startPoint: .top,
                                              endPoint: .bottom))
                         .frame(width: 120, height: 120)
@@ -74,7 +74,7 @@ struct ContentView: View {
                 .rotationEffect(.degrees(120))
             }
             .rotationEffect(.degrees(rotateInOut ? 90 : 0))
-            .scaleEffect(scaleInOut ? 1 : 1/4)
+            .scaleEffect(scaleInOut ? 1.25 : 1/24)
             .animation(Animation.easeInOut.repeatForever(autoreverses: true).speed(1/8))
             .onAppear {
                 moveInOut.toggle()
