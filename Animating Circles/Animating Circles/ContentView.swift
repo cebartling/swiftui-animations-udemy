@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State private var scaleInOut = false
     @State private var rotateInOut = false
     @State private var moveInOut = false
