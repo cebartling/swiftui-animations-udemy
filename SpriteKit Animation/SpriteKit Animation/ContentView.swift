@@ -42,7 +42,14 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.black, Color.white.opacity(0.8), .black]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient:
+                Gradient(colors: [
+                    .black,
+                    Color.white.opacity(0.8),
+                    .black
+                ]),
+                startPoint: .top,
+                endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 SpriteView(scene: scene)
